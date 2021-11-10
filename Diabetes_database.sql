@@ -29,7 +29,7 @@ lines terminated by '\n'
 ignore 1 rows;
 
 create table reg.Coronary
-(Patient_ID int not null not null REFERENCES patients (patient_id), 
+(Patient_ID int not null REFERENCES patients (patient_id), 
 Systolic_BP int, 
 Diastolic_BP int, 
 Date_BP date, 
@@ -45,7 +45,7 @@ lines terminated by '\n'
 ignore 1 rows;
 
 create table reg.Microvascular
-(Patient_ID int not null not null REFERENCES patients (patient_id), 
+(Patient_ID int not null REFERENCES patients (patient_id), 
 alb_cr decimal (3,2), 
 Date_alb_cr date, 
 cr_clearance decimal (3,2), 
